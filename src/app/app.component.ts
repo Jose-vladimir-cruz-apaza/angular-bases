@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'curso-angular-youtube';
+  public title: string = 'Hola Mundo';
+  public counter: number = 10;
+
+  increasyBy(value:number): void{
+    this.counter =value+1;
+  }
+
+  discrasyBy(value:number): void{
+    this.counter =value-1;
+  }
+
+  resetBy():void {
+    this.counter=0;
+  }
 }
